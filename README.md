@@ -1,4 +1,4 @@
-[日本語](README.ja.md) | [简体中文](README.zh-CN.md) | [한국어](README.ko.md)
+[日本語🇯🇵](README.ja.md) | [简体中文🇨🇳](README.CN.md) | [한국어🇰🇷](README.kr.md)
 # CC-video2audio
 
 Convert video files to audio files using FFmpeg.
