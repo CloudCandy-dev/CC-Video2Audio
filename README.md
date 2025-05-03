@@ -15,6 +15,6 @@ Support codecs(audio): mp3, wav, aac
 Put the video file in the `INPUT` folder (or the input folder specified in `config.json`), run `video2audio.py`, and the converted audio file will be output to the `OUTPUT` folder (or the output folder specified in `config.json`).
 
 The default conversion format is mp3. If you want to change it, change the value of `target_format` in `configs/config.json` (e.g., "wav", "aac").
-The default display language is English. If you want to change it, change the value of `language` in `configs/config.json` (e.g., "ja", "zh-CN", "ko").
+The default display language is English. If you want to change it, change the value of `language` in `configs/config.json` (e.g., "ja", "cn", "kr").
 
 Using FFmpeg(https://ffmpeg.org/) Version: 2025-05-01-git-707c04fe06

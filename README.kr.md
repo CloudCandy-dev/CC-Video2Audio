@@ -15,6 +15,6 @@ FFmpeg을 사용하여 비디오 파일을 오디오 파일로 변환합니다.
 `INPUT` 폴더(또는 `config.json`에서 지정한 입력 폴더)에 비디오 파일을 넣고 `video2audio.py`를 실행하면, `OUTPUT` 폴더(또는 `config.json`에서 지정한 출력 폴더)에 변환된 오디오 파일이 출력됩니다.
 
 기본 변환 형식은 mp3입니다. 변경하려면 `configs/config.json` 파일 내의 `target_format` 값을 변경하십시오 (예: "wav", "aac").
-기본 표시 언어는 영어입니다. 변경하려면 `configs/config.json` 파일 내의 `language` 값을 변경하십시오 (예: "ja", "zh-CN", "ko").
+기본 표시 언어는 영어입니다. 변경하려면 `configs/config.json` 파일 내의 `language` 값을 변경하십시오 (예: "ja", "cn", "kr").
 
 사용 중인 FFmpeg(https://ffmpeg.org/) 버전: 2025-05-01-git-707c04fe06
