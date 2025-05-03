@@ -1,0 +1,59 @@
+{
+    "version": "0.0.1",
+    "title": "CC-video2audio",
+
+    "processing_start": "开始媒体文件批量转换处理。",
+    "input_folder_info": "输入文件夹: {input_dir}",
+    "output_folder_info": "输出文件夹: {output_dir}",
+    "target_format_info": "目标音频格式: {target_format}",
+
+    "error_ffmpeg_not_found": "\n错误：未找到 FFmpeg。",
+    "error_ffmpeg_not_found_msg1": "检查 FFmpeg 是否在系统 PATH 中，",
+    "error_ffmpeg_not_found_msg2": "或者将 '{ffmpeg_name}'",
+    "error_ffmpeg_not_found_msg3": "放置在此脚本 ({script_dir}) 所在的目录或其中的 'ffmpeg' 文件夹中。",
+    "press_any_key_to_exit": "按任意键退出...",
+    "ffmpeg_in_use": "使用的 FFmpeg: {ffmpeg_path}",
+
+    "target_format_is_notexist": "\n错误：目标格式 '{target_format}' 未在 FFMPEG_OPTIONS 中定义。",
+    "warning_target_format_options": "警告：未找到目标格式 '{target_format}' 的选项。将仅尝试提取音频。",
+    "available_formats": "可用格式: {formats}",
+
+    "error_create_output_folder": "\n错误：创建输出文件夹 '{output_dir}' 失败：{error}",
+    "error_input_folder_not_found": "\n错误：未找到输入文件夹 '{input_dir}'。",
+    "error_input_folder_create_msg": "请在脚本所在的目录下创建 '{input_dir_name}' 文件夹，并将要转换的文件放入其中。",
+    "error_input_path_is_not_dir": "\n错误：'{input_dir}' 不是文件夹。可能是一个文件。",
+    "error_input_create_dir_msg": "请创建一个名为 '{input_dir_name}' 的文件夹。",
+
+    "conversion_start_separator": "\n--- 转换处理开始 ---",
+    "error_read_input_folder": "\n错误：无法读取输入文件夹 '{input_dir}' 的内容：{error}",
+    "input_folder_empty": "输入文件夹中没有文件。",
+    "processing_progress": "\n[{current}/{total}] 处理中: {filename}",
+    "converting_file": "转换中: {input_filename} -> {output_filename}",
+    "conversion_success": "成功: {filename}",
+
+    "skip_file_exists": "跳过：输出文件 {filename} 已存在。",
+    "skip_unsupported_extension": "跳过：{filename} (扩展名 {extension} 不受支持)",
+    "skip_is_directory": "跳过：{name} (目录)",
+    "skip_not_file_or_dir": "跳过：{name} (不是文件或目录)",
+
+    "error_ffmpeg_conversion": "\n错误：转换 {filename} 时发生 FFmpeg 错误。",
+    "error_return_code": "退出代码: {code}",
+    "error_ffmpeg_stderr": "FFmpeg 标准错误输出:\n{stderr}",
+    "deleted_failed_output": "已删除失败的输出文件 {filename}。",
+    "warning_delete_failed_output": "警告：删除失败的输出文件 {filename} 失败：{error}",
+    "error_ffmpeg_command_not_found": "\n错误：未找到 FFmpeg 命令 '{command}'。",
+    "error_unexpected": "\n意外错误 ({filename}): {error}",
+
+    "conversion_end_separator": "\n--- 转换处理结束 ---",
+    "processing_result_header": "处理结果:",
+    "result_total_items": "  输入文件夹中的项目数: {count}",
+    "result_success_count": "  转换成功: {count} 文件",
+    "result_failure_count": "  转换失败: {count} 文件",
+    "result_skipped_count": "  跳过 (不支持/已存在/目录等): {count} 项目",
+    "warning_failures_occurred": "\n注意：部分文件转换失败。请检查上面的错误消息。",
+    "processing_complete": "\n处理完成。",
+
+    "warning_config_options_missing": "警告：在 config.json 中未找到 'ffmpeg_options' 或其为空。",
+    "warning_config_extensions_missing": "警告：在 config.json 中未找到 'supported_input_extensions' 或其为空。",
+    "warning_empty_extensions_config": "警告：未设置支持的扩展名。请检查 config.json。"
+}

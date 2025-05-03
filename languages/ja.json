@@ -1,0 +1,59 @@
+{
+    "version": "0.0.1",
+    "title": "CC-video2audio",
+
+    "processing_start": "メディアファイル変換バッチ処理を開始します。",
+    "input_folder_info": "入力フォルダ: {input_dir}",
+    "output_folder_info": "出力フォルダ: {output_dir}",
+    "target_format_info": "ターゲット音声形式: {target_format}",
+
+    "error_ffmpeg_not_found": "\nエラー: FFmpegが見つかりません。",
+    "error_ffmpeg_not_found_msg1": "システムPATHにFFmpegが設定されているか、",
+    "error_ffmpeg_not_found_msg2": "または '{ffmpeg_name}' を",
+    "error_ffmpeg_not_found_msg3": "このスクリプト ({script_dir}) と同じディレクトリ、またはその中の'ffmpeg'フォルダに配置してください。",
+    "press_any_key_to_exit": "何かキーを押して終了します...",
+    "ffmpeg_in_use": "使用するFFmpeg: {ffmpeg_path}",
+
+    "target_format_is_notexist": "\nエラー: 設定されたターゲット形式 '{target_format}' はFFMPEG_OPTIONSで定義されていません。",
+    "warning_target_format_options": "警告: ターゲット形式 '{target_format}' のオプションが見つかりません。音声抽出のみ試みます。",
+    "available_formats": "利用可能な形式: {formats}",
+
+    "error_create_output_folder": "\nエラー: 出力フォルダ '{output_dir}' の作成に失敗しました: {error}",
+    "error_input_folder_not_found": "\nエラー: 入力フォルダ '{input_dir}' が見つかりません。",
+    "error_input_folder_create_msg": "スクリプトと同じ階層に '{input_dir_name}' フォルダを作成し、変換したいファイルを入れてください。",
+    "error_input_path_is_not_dir": "\nエラー: '{input_dir}' はフォルダではありません。ファイルなどが配置されている可能性があります。",
+    "error_input_create_dir_msg": "'{input_dir_name}' という名前のフォルダを作成してください。",
+
+    "conversion_start_separator": "\n--- 変換処理開始 ---",
+    "error_read_input_folder": "\nエラー: 入力フォルダ '{input_dir}' の内容を読み取れませんでした: {error}",
+    "input_folder_empty": "入力フォルダ内にファイルが見つかりません。",
+    "processing_progress": "\n[{current}/{total}] 処理中: {filename}",
+    "converting_file": "変換中: {input_filename} -> {output_filename}",
+    "conversion_success": "成功: {filename}",
+
+    "skip_file_exists": "スキップ: 出力ファイル {filename} は既に存在します。",
+    "skip_unsupported_extension": "スキップ: {filename} (拡張子 {extension} はサポート対象外)",
+    "skip_is_directory": "スキップ: {name} (フォルダ)",
+    "skip_not_file_or_dir": "スキップ: {name} (ファイルでもフォルダでもない)",
+
+    "error_ffmpeg_conversion": "\nエラー: {filename} の変換中にFFmpegエラーが発生しました。",
+    "error_return_code": "終了コード: {code}",
+    "error_ffmpeg_stderr": "FFmpeg 標準エラー出力:\n{stderr}",
+    "deleted_failed_output": "失敗した出力ファイル {filename} を削除しました。",
+    "warning_delete_failed_output": "警告: 失敗した出力ファイル {filename} の削除に失敗しました: {error}",
+    "error_ffmpeg_command_not_found": "\nエラー: FFmpegコマンド '{command}' が見つかりません。",
+    "error_unexpected": "\n予期せぬエラー ({filename}): {error}",
+
+    "conversion_end_separator": "\n--- 変換処理終了 ---",
+    "processing_result_header": "処理結果:",
+    "result_total_items": "  入力フォルダ内のアイテム数: {count}",
+    "result_success_count": "  変換成功: {count} ファイル",
+    "result_failure_count": "  変換失敗: {count} ファイル",
+    "result_skipped_count": "  スキップ(対象外/既存/フォルダ等): {count} アイテム",
+    "warning_failures_occurred": "\n注意: いくつかのファイルの変換に失敗しました。上記のエラーメッセージを確認してください。",
+    "processing_complete": "\n処理が完了しました。",
+
+    "warning_config_options_missing": "警告: config.json に ffmpeg_options が見つからないか、空です。",
+    "warning_config_extensions_missing": "警告: config.json に supported_input_extensions が見つからないか、空です。",
+    "warning_empty_extensions_config": "警告: 処理対象の拡張子が設定されていません。config.jsonを確認してください。"
+}

@@ -1,0 +1,59 @@
+{
+    "version": "0.0.1",
+    "title": "CC-video2audio",
+
+    "processing_start": "미디어 파일 배치 변환 처리를 시작합니다.",
+    "input_folder_info": "입력 폴더: {input_dir}",
+    "output_folder_info": "출력 폴더: {output_dir}",
+    "target_format_info": "대상 오디오 형식: {target_format}",
+
+    "error_ffmpeg_not_found": "\n오류: FFmpeg를 찾을 수 없습니다.",
+    "error_ffmpeg_not_found_msg1": "시스템 PATH에 FFmpeg가 있는지 확인하거나,",
+    "error_ffmpeg_not_found_msg2": "또는 '{ffmpeg_name}'을(를)",
+    "error_ffmpeg_not_found_msg3": "이 스크립트({script_dir})와 동일한 디렉토리 또는 그 안의 'ffmpeg' 폴더에 배치하십시오.",
+    "press_any_key_to_exit": "아무 키나 눌러 종료하십시오...",
+    "ffmpeg_in_use": "사용 중인 FFmpeg: {ffmpeg_path}",
+
+    "target_format_is_notexist": "\n오류: 대상 형식 '{target_format}'이(가) FFMPEG_OPTIONS에 정의되어 있지 않습니다.",
+    "warning_target_format_options": "경고: 대상 형식 '{target_format}'에 대한 옵션을 찾을 수 없습니다. 오디오 추출만 시도합니다.",
+    "available_formats": "사용 가능한 형식: {formats}",
+
+    "error_create_output_folder": "\n오류: 출력 폴더 '{output_dir}' 생성 실패: {error}",
+    "error_input_folder_not_found": "\n오류: 입력 폴더 '{input_dir}'를 찾을 수 없습니다.",
+    "error_input_folder_create_msg": "스크립트와 동일한 디렉토리에 '{input_dir_name}' 폴더를 만들고 변환할 파일을 넣으십시오.",
+    "error_input_path_is_not_dir": "\n오류: '{input_dir}'은(는) 폴더가 아닙니다. 파일일 수 있습니다.",
+    "error_input_create_dir_msg": "'{input_dir_name}'이라는 이름의 폴더를 만드십시오.",
+
+    "conversion_start_separator": "\n--- 변환 처리 시작 ---",
+    "error_read_input_folder": "\n오류: 입력 폴더 '{input_dir}'의 내용을 읽을 수 없습니다: {error}",
+    "input_folder_empty": "입력 폴더에 파일이 없습니다.",
+    "processing_progress": "\n[{current}/{total}] 처리 중: {filename}",
+    "converting_file": "변환 중: {input_filename} -> {output_filename}",
+    "conversion_success": "성공: {filename}",
+
+    "skip_file_exists": "건너뛰기: 출력 파일 {filename}이(가) 이미 존재합니다.",
+    "skip_unsupported_extension": "건너뛰기: {filename} (확장자 {extension}은(는) 지원되지 않음)",
+    "skip_is_directory": "건너뛰기: {name} (디렉토리)",
+    "skip_not_file_or_dir": "건너뛰기: {name} (파일 또는 디렉토리가 아님)",
+
+    "error_ffmpeg_conversion": "\n오류: {filename} 변환 중 FFmpeg 오류가 발생했습니다.",
+    "error_return_code": "종료 코드: {code}",
+    "error_ffmpeg_stderr": "FFmpeg 표준 오류 출력:\n{stderr}",
+    "deleted_failed_output": "실패한 출력 파일 {filename}을(를) 삭제했습니다.",
+    "warning_delete_failed_output": "경고: 실패한 출력 파일 {filename} 삭제 실패: {error}",
+    "error_ffmpeg_command_not_found": "\n오류: FFmpeg 명령 '{command}'을(를) 찾을 수 없습니다.",
+    "error_unexpected": "\n예기치 않은 오류 ({filename}): {error}",
+
+    "conversion_end_separator": "\n--- 변환 처리 종료 ---",
+    "processing_result_header": "처리 결과:",
+    "result_total_items": "  입력 폴더 내 항목 수: {count}",
+    "result_success_count": "  변환 성공: {count} 파일",
+    "result_failure_count": "  변환 실패: {count} 파일",
+    "result_skipped_count": "  건너뛴 항목(미지원/기존/디렉토리 등): {count} 개",
+    "warning_failures_occurred": "\n주의: 일부 파일 변환에 실패했습니다. 위의 오류 메시지를 확인하십시오.",
+    "processing_complete": "\n처리가 완료되었습니다.",
+
+    "warning_config_options_missing": "경고: config.json에서 'ffmpeg_options'를 찾을 수 없거나 비어 있습니다.",
+    "warning_config_extensions_missing": "경고: config.json에서 'supported_input_extensions'를 찾을 수 없거나 비어 있습니다.",
+    "warning_empty_extensions_config": "경고: 지원되는 확장자가 설정되지 않았습니다. config.json을 확인하십시오."
+}

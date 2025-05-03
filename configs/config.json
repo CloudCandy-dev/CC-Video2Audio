@@ -1,0 +1,12 @@
+{
+    "language": "ja",
+    "target_format": "mp3",
+    "input_dir": "INPUT",
+    "output_dir": "OUTPUT",
+    "ffmpeg_options": {
+        "mp3": ["-vn", "-acodec", "libmp3lame", "-ab", "192k"],
+        "wav": ["-vn", "-acodec", "pcm_s16le"],
+        "aac": ["-vn", "-acodec", "aac", "-b:a", "192k"]
+    },
+    "supported_input_extensions": [".mp4", ".mov", ".avi", ".mkv", ".wmv", ".flv", ".webm"]
+}

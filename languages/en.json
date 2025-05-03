@@ -1,0 +1,59 @@
+{
+    "version": "0.0.1",
+    "title": "CC-video2audio",
+
+    "processing_start": "Starting media file batch conversion process.",
+    "input_folder_info": "Input folder: {input_dir}",
+    "output_folder_info": "Output folder: {output_dir}",
+    "target_format_info": "Target audio format: {target_format}",
+
+    "error_ffmpeg_not_found": "\nError: FFmpeg not found.",
+    "error_ffmpeg_not_found_msg1": "Check if FFmpeg is in the system PATH,",
+    "error_ffmpeg_not_found_msg2": "or place '{ffmpeg_name}'",
+    "error_ffmpeg_not_found_msg3": "in the same directory as this script ({script_dir}) or in the 'ffmpeg' folder within it.",
+    "press_any_key_to_exit": "Press any key to exit...",
+    "ffmpeg_in_use": "FFmpeg in use: {ffmpeg_path}",
+
+    "target_format_is_notexist": "\nError: Target format '{target_format}' is not defined in FFMPEG_OPTIONS.",
+    "warning_target_format_options": "Warning: Options for target format '{target_format}' not found. Attempting audio extraction only.",
+    "available_formats": "Available formats: {formats}",
+
+    "error_create_output_folder": "\nError: Failed to create output folder '{output_dir}': {error}",
+    "error_input_folder_not_found": "\nError: Input folder '{input_dir}' not found.",
+    "error_input_folder_create_msg": "Create the '{input_dir_name}' folder in the same directory as the script and place the files you want to convert inside.",
+    "error_input_path_is_not_dir": "\nError: '{input_dir}' is not a folder. It might be a file.",
+    "error_input_create_dir_msg": "Please create a folder named '{input_dir_name}'.",
+
+    "conversion_start_separator": "\n--- Conversion Process Start ---",
+    "error_read_input_folder": "\nError: Could not read the contents of the input folder '{input_dir}': {error}",
+    "input_folder_empty": "No files found in the input folder.",
+    "processing_progress": "\n[{current}/{total}] Processing: {filename}",
+    "converting_file": "Converting: {input_filename} -> {output_filename}",
+    "conversion_success": "Success: {filename}",
+
+    "skip_file_exists": "Skip: Output file {filename} already exists.",
+    "skip_unsupported_extension": "Skip: {filename} (Extension {extension} is not supported)",
+    "skip_is_directory": "Skip: {name} (Directory)",
+    "skip_not_file_or_dir": "Skip: {name} (Not a file or directory)",
+
+    "error_ffmpeg_conversion": "\nError: FFmpeg error during conversion of {filename}.",
+    "error_return_code": "Exit code: {code}",
+    "error_ffmpeg_stderr": "FFmpeg Standard Error Output:\n{stderr}",
+    "deleted_failed_output": "Deleted failed output file {filename}.",
+    "warning_delete_failed_output": "Warning: Failed to delete failed output file {filename}: {error}",
+    "error_ffmpeg_command_not_found": "\nError: FFmpeg command '{command}' not found.",
+    "error_unexpected": "\nUnexpected error ({filename}): {error}",
+
+    "conversion_end_separator": "\n--- Conversion Process End ---",
+    "processing_result_header": "Processing Results:",
+    "result_total_items": "  Number of items in input folder: {count}",
+    "result_success_count": "  Conversion successful: {count} files",
+    "result_failure_count": "  Conversion failed: {count} files",
+    "result_skipped_count": "  Skipped (Unsupported/Existing/Dir, etc.): {count} items",
+    "warning_failures_occurred": "\nNote: Conversion failed for some files. Please check the error messages above.",
+    "processing_complete": "\nProcessing complete.",
+
+    "warning_config_options_missing": "Warning: 'ffmpeg_options' not found or empty in config.json.",
+    "warning_config_extensions_missing": "Warning: 'supported_input_extensions' not found or empty in config.json.",
+    "warning_empty_extensions_config": "Warning: No supported extensions are set. Check config.json."
+}
